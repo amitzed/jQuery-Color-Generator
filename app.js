@@ -3,8 +3,12 @@ const $myColorBox = $('#my-color-box');
 const $colorChanger = $('#color-changer');
 
 const createColorBoxes = () => {
-  $boxes = $('<div>').addClass('boxes');
-  $colorBox.append($boxes);
+  for (let i = 0; i < 200; i++) {
+    const $box = $('<div>');
+    $box.addClass('box');
+
+    $colorBox.append($box);
+  };
 };
 
 
