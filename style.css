@@ -12,15 +12,6 @@ body {
   border-radius: 10px;
 }
 
-#container {
-  background-color: #68A677;
-  width: 800px;
-  height: 600px;
-  padding: 30px;
-  margin: 10px;
-  border-radius: 10px;
-}
-
 /* Change Color Button */
 #color-changerBtn {
   font-family: 'Major Mono Display', monospace;
@@ -30,9 +21,44 @@ body {
   padding: 30px;
   margin: 10px;
   border-radius: 10px;
+  cursor: pointer;
 }
 #color-changerBtn:hover {
   background-color: #57332C;
   color: #68A677;
   transition: ease all .5s;
 }
+/* End */
+
+div {
+  border: 1.5px solid #B0361C;
+  border-radius: 10px;
+}
+
+#container {
+  background-color: #68A677;
+  width: 100%;
+  /* height: 600px; */
+  /* padding: 30px; */
+  /* margin: 10px; */
+  border-radius: 10px;
+}
+
+/* Box Divs */
+#color-box,
+#my-color-box {
+  display: inline-block;
+  width: 300px;
+  height: 500px;
+  overflow: hidden;
+}
+/* End */
+
+/* Inner Boxes */
+.box {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+/* End */
