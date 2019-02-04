@@ -7,7 +7,7 @@ html {
 
 body {
   background-color: #E5D084;
-  padding: 10px;
+  padding: 10px 40px 40px 40px;;
   margin: 0;
   border-radius: 10px;
 }
@@ -31,7 +31,7 @@ button:hover {
 /* End */
 
 div {
-  border: 1.5px solid #B0361C;
+  border: .17em solid #57332C;
   border-radius: 10px;
 }
 
@@ -47,10 +47,21 @@ div {
 /* Box Divs */
 #color-box,
 #my-color-box {
+  /* text-align: center; */
   display: inline-block;
   width: 300px;
-  height: 500px;
+  height: 700px;
   overflow: hidden;
+}
+#color-box {
+  margin: 35px;
+  padding: 20px;
+  text-align: center;
+}
+#my-color-box {
+  margin: 35px;
+  padding: 20px;
+  text-align: justify;
 }
 /* End */
 
@@ -60,5 +71,8 @@ div {
   width: 35px;
   height: 35px;
   cursor: pointer;
+}
+.box:hover {
+  box-shadow: 3px 3px 5px 6px #E5D084;
 }
 /* End */
