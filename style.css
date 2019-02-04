@@ -1,0 +1,38 @@
+@import "https://fonts.googleapis.com/css?family=Major+Mono+Display" rel="stylesheet";
+
+html {
+  background-color: #B0361C;
+  padding: 10px;
+}
+
+body {
+  background-color: #E5D084;
+  padding: 10px;
+  margin: 0;
+  border-radius: 10px;
+}
+
+#container {
+  background-color: #68A677;
+  width: 800px;
+  height: 600px;
+  padding: 30px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+/* Change Color Button */
+#color-changerBtn {
+  font-family: 'Major Mono Display', monospace;
+  font-size: 15px;
+  background-color: #7D7157;
+  color: ghostwhite;
+  padding: 30px;
+  margin: 10px;
+  border-radius: 10px;
+}
+#color-changerBtn:hover {
+  background-color: #57332C;
+  color: #68A677;
+  transition: ease all .5s;
+}
