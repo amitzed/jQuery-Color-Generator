@@ -12,8 +12,8 @@ body {
   border-radius: 10px;
 }
 
-/* Change Color Button */
-#color-changerBtn {
+/* Buttons Global */
+button {
   font-family: 'Major Mono Display', monospace;
   font-size: 15px;
   background-color: #7D7157;
@@ -23,7 +23,7 @@ body {
   border-radius: 10px;
   cursor: pointer;
 }
-#color-changerBtn:hover {
+button:hover {
   background-color: #57332C;
   color: #68A677;
   transition: ease all .5s;
