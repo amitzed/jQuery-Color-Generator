@@ -33,7 +33,14 @@ button:hover {
 
 div {
   border: .17em solid #57332C;
+  background-color: cadetblue;
   border-radius: 10px;
+}
+@media (max-width: 1350px) {
+ div {
+
+   transition: ease all .5s;
+ }
 }
 
 #container {
@@ -43,6 +50,10 @@ div {
   /* padding: 30px; */
   /* margin: 10px; */
   border-radius: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Box Divs */
