@@ -12,20 +12,33 @@ body {
   border-radius: 10px;
 }
 
+.header {
+  border: none;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+/* H1 Title */
+h1 {
+  font-family: 'Major Mono Display', monospace;
+  /* text-align: center; */
+}
+/* End */
+
 /* Buttons Global */
 button {
   font-family: 'Major Mono Display', monospace;
   font-size: 15px;
   background-color: #7D7157;
   color: ghostwhite;
-  padding: 30px;
-  margin: 10px;
+  padding: 25px;
+  margin: 0 0 10px 0;
   border-radius: 10px;
   cursor: pointer;
 }
 button:hover {
   background-color: #57332C;
-  color: #68A677;
+  color: #ADFF2F;
   box-shadow: 1px 1px 3px 4px #B0361C;
   transition: ease all .5s;
 }
@@ -33,12 +46,11 @@ button:hover {
 
 div {
   border: .17em solid #57332C;
-  background-color: cadetblue;
   border-radius: 10px;
 }
-@media (max-width: 1350px) {
+@media (max-width: 860px) {
  div {
-
+   width: 100%;
    transition: ease all .5s;
  }
 }
@@ -46,9 +58,6 @@ div {
 #container {
   background-color: #68A677;
   width: 100%;
-  /* height: 600px; */
-  /* padding: 30px; */
-  /* margin: 10px; */
   border-radius: 10px;
   display: flex;
   flex-flow: row nowrap;
@@ -59,7 +68,7 @@ div {
 /* Box Divs */
 #color-box,
 #my-color-box {
-  /* text-align: center; */
+  background-color: cadetblue;
   display: inline-block;
   width: 500px;
   height: 700px;
@@ -87,8 +96,37 @@ div {
 .box:hover {
   box-shadow: 3px 3px 5px 6px #E5D084;
 }
+@media (max-width: 1310px) {
+  .box {
+   width: 30px;
+   height: 30px;
+   transition: ease all .5s;
+ }
+}
+@media (max-width: 1200px) {
+  .box {
+   width: 20px;
+   height: 20px;
+   border-radius: 5px;
+   transition: ease all .5s;
+ }
+}
+@media (max-width: 600px) {
+  .box {
+   width: 12px;
+   height: 12px;
+   border-radius: 50%;
+   transition: ease all .5s;
+ }
+}
+@media (max-width: 600px) {
+  .box {
+   width: 9px;
+   height: 9px;
+   transition: ease all .5s;
+ }
+}
 /* End */
-
 
 /* Media Queries */
 /* @media (max-width: 850px) {

@@ -4,7 +4,7 @@ const $colorChanger = $('#color-changerBtn');
 
 const createColorBoxes = () => {
   $colorBox.empty();
-  for (let i = 0; i < 112; i++) {
+  for (let i = 0; i < 192; i++) {
     const $box = $('<div>');
     $box.addClass('box');
 
