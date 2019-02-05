@@ -15,13 +15,17 @@ body {
 .header {
   border: none;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
 }
 
 /* H1 Title */
 h1 {
   font-family: 'Major Mono Display', monospace;
-  /* text-align: center; */
+  font-size: 25px;
+  text-align: center;
 }
 /* End */
 
@@ -42,17 +46,16 @@ button:hover {
   box-shadow: 1px 1px 3px 4px #B0361C;
   transition: ease all .5s;
 }
+#color-changerBtn,
+#clickColorAdd
+ {
+  margin-right: 50px;
+}
 /* End */
 
 div {
   border: .17em solid #57332C;
   border-radius: 10px;
-}
-@media (max-width: 860px) {
- div {
-   width: 100%;
-   transition: ease all .5s;
- }
 }
 
 #container {
@@ -96,6 +99,47 @@ div {
 .box:hover {
   box-shadow: 3px 3px 5px 6px #E5D084;
 }
+/* End */
+
+/* Media Queries */
+@media (max-width: 650px) {
+  h1  {
+   font-size: 20px;
+   transition: ease all .5s;
+ }
+}
+@media (max-width: 500px) {
+  h1  {
+   font-size: 15px;
+   transition: ease all .5s;
+ }
+}
+
+@media (max-width: 500px) {
+ button {
+   font-size: 10px;
+   padding: 15px;
+   margin: 0 0 10px 0;
+   transition: ease all .5s;
+ }
+}
+
+@media (max-width: 860px) {
+ div {
+   width: 100%;
+   transition: ease all .5s;
+ }
+}
+
+@media (max-height: 1000px) {
+  #color-box,
+  #my-color-box  {
+   height: 650px;
+   /* width: 350px; */
+   transition: ease all .5s;
+ }
+}
+
 @media (max-width: 1310px) {
   .box {
    width: 30px;
@@ -103,6 +147,7 @@ div {
    transition: ease all .5s;
  }
 }
+
 @media (max-width: 1200px) {
   .box {
    width: 20px;
@@ -111,6 +156,7 @@ div {
    transition: ease all .5s;
  }
 }
+
 @media (max-width: 600px) {
   .box {
    width: 12px;
@@ -119,6 +165,7 @@ div {
    transition: ease all .5s;
  }
 }
+
 @media (max-width: 600px) {
   .box {
    width: 9px;
@@ -126,35 +173,4 @@ div {
    transition: ease all .5s;
  }
 }
-/* End */
-
-/* Media Queries */
-/* @media (max-width: 850px) {
- #container {
-   background-color: skyblue;
-   transition: ease all .5s;
- }
-}
-@media (min-width: 1500px) {
- #container {
-   background-color: grey;
-   transition: ease all .5s;
- }
-}
-@media (max-width: 850px) {
-  #color-box,
-  #my-color-box {
-   width: 300px;
-   height: 500px;
-   transition: ease all .5s;
- }
-}
-@media (min-width: 1500px) {
-  #color-box,
-  #my-color-box {
-   width: 700px;
-   height: 900px;
-   transition: ease all .5s;
- }
-} */
 /* End */

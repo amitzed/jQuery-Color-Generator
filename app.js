@@ -43,11 +43,16 @@ $(() => {
 
   createColorBoxes();
 
- // This Changes Body background Color
+ // This Changes BODY background Color
   $('body').on('click', (event) => {
+    $(event.currentTarget).css('background', changeBodyColorRandom);
+  });
+  //End
+ // This Changes HTML background Color
+  $('html').on('click', (event) => {
     $(event.currentTarget).css('background', changeBodyColorRandom);
   });
   //End
 
 });
-// End Document Ready FUnction *************
+// End Document Ready Function *************
