@@ -38,7 +38,7 @@ const changeBodyColorRandom = () => {
 };
 // End
 
-// Document Ready Function *****************
+// Document Ready Function *******************
 $(() => {
 
   createColorBoxes();
