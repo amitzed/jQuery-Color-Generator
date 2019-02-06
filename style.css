@@ -2,7 +2,13 @@
 
 html {
   background-color: #B0361C;
+  background-image: url("images/Color_palette.png");
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 10px;
+  opacity: .92;
 }
 
 body {
@@ -10,6 +16,9 @@ body {
   padding: 10px 40px 40px 40px;;
   margin: 0;
   border-radius: 10px;
+  -webkit-animation: size-in 1.s ease 1;
+  -moz-animation: size-in 1s ease 1;
+  animation: size-in 1s ease 1;
 }
 
 .header {
@@ -47,9 +56,15 @@ button:hover {
   transition: ease all .5s;
 }
 #color-changerBtn,
-#clickColorAdd
- {
+#clickColorAdd {
   margin-right: 50px;
+}
+#color-changerBtn,
+#clickColorAdd,
+#hoverColorAdd {
+  -webkit-animation: size-in 1s ease 1;
+  -moz-animation: size-in 1s ease 1;
+  animation: size-in 1s ease 1;
 }
 /* End */
 
@@ -76,6 +91,9 @@ div {
   width: 500px;
   height: 700px;
   overflow: hidden;
+  -webkit-animation: size-in 1s ease 1;
+  -moz-animation: size-in 1s ease 1;
+  animation: size-in 1s ease 1;
 }
 #color-box {
   margin: 35px;
@@ -172,5 +190,32 @@ div {
    height: 9px;
    transition: ease all .5s;
  }
+}
+/* End */
+
+/* Animations */
+@-webkit-keyframes size-in {
+  from {
+    transform: scale(.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@-moz-keyframes size-in {
+  from {
+    transform: scale(.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes size-in {
+  from {
+    transform: scale(.1);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 /* End */
