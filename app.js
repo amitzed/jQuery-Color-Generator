@@ -10,7 +10,7 @@ const createColorBoxes = () => {
 
     const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
     $box.css('background-color', randomColor);
-    // $box.on('click', addColors);
+    $box.on('click', addColors);
     $box.on('mouseover', addColors);
 
     $colorBox.append($box);
