@@ -55,13 +55,10 @@ button:hover {
   box-shadow: 1px 1px 3px 4px #B0361C;
   transition: ease all .5s;
 }
-#color-changerBtn,
-#clickColorAdd {
+#color-changerBtn {
   margin-right: 50px;
 }
-#color-changerBtn,
-#clickColorAdd,
-#hoverColorAdd {
+#color-changerBtn {
   -webkit-animation: size-in 1s ease 1;
   -moz-animation: size-in 1s ease 1;
   animation: size-in 1s ease 1;
@@ -104,6 +101,12 @@ div {
   margin: 35px;
   padding: 20px;
   text-align: justify;
+}
+/* End */
+
+/* Toggle My Board Background Color on button Click */
+.myBoardBGToggle {
+  background-image: url('images/raindrop-branch.gif');
 }
 /* End */
 

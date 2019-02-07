@@ -38,21 +38,32 @@ const changeBodyColorRandom = () => {
 };
 // End
 
+
+const toggleMyBoardBG = () => {
+  $('#my-color-box').toggleClass('myBoardBGToggle')
+};
+// End
+
 // Document Ready Function *******************
 $(() => {
 
   createColorBoxes();
 
- // This Changes BODY background Color
-  $('body').on('click', (event) => {
-    $(event.currentTarget).css('background', changeBodyColorRandom);
-  });
-  //End
  // This Changes HTML background Color
   $('html').on('click', (event) => {
     $(event.currentTarget).css('background', changeBodyColorRandom);
   });
   //End
+  // This Changes BODY background Color
+   $('body').on('click', (event) => {
+     $(event.currentTarget).css('background', changeBodyColorRandom);
+   });
+   //End
+
+   // Background Board Color Changer on button Click
+  const $bgClicker = $('#bgClicker');
+    $bgClicker.on('click', toggleMyBoardBG);
+    // End
 
 });
 // End Document Ready Function *************
