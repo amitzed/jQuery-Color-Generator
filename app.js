@@ -30,7 +30,7 @@ const addColors = (event) => {
 $colorChanger.on('click', createColorBoxes);
 
 // This Changes Body background Color
-const changeBodyColorRandom = () => {
+const changeBodyColorRandom = (event) => {
   const red = Math.floor(Math.random() * 256);
   const green = Math.floor(Math.random() * 256);
   const blue = Math.floor(Math.random() * 256);
@@ -39,8 +39,8 @@ const changeBodyColorRandom = () => {
 // End
 
 
-const toggleMyBoardBG = () => {
-  $('#my-color-box').toggleClass('myBoardBGToggle')
+const toggleMyBoardBG = (event) => {
+  $('#my-color-box').toggleClass('myBoardBGToggle');
 };
 // End
 

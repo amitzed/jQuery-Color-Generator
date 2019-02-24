@@ -87,7 +87,7 @@ div {
   display: inline-block;
   width: 500px;
   height: 700px;
-  overflow: hidden;
+  overflow: scroll;
   -webkit-animation: size-in 1s ease 1;
   -moz-animation: size-in 1s ease 1;
   animation: size-in 1s ease 1;
